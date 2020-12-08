@@ -34,30 +34,57 @@
 
   <body>
     <!-- QUIZ -->
-    <!-- Container to house timer, score, & questions -->
-    <div id="container">
-      <div id="timer"></div>
-      <div id="score"></div>
-      <div id="questions">
-        <!-- Quiz Heading -->
-        <h1>Quiz-mania!</h1><hr/>
+    <!-- Card to house timer, score, & questions -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="about-card">
+            <header class="card-header">
+              <!-- Quiz Heading -->
+              <h2>~Quiz-mania~</h2>
+            </header>
 
-        <!-- Quiz Intro & Instructions -->
-        <p>Welcome to the <em id="handle">MissNG</em> Quiz!</p>
-        <p>...where you will test your knowledge of some of my favourite geek culture. You will have 3 minutes (or 180 seconds) to answer as many questions as you can.
-          Every correct answer will award you 5 points, and every incorrect answer will deduct 2 points from your score. Think that's too easy? Well that's not all...
-          Be aware that every wrong answer will also decrease the amount of time you have left! 😱</p>
-        <p>If you think you're ready to take on this pop culture challenge, click on the button below:</p>
-      </div>
+            <!-- Sub-row for Sub-Header w/GoogleFonts -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h3 class="card-title">Welcome to the <em id="handle">MissNG</em> Quiz!</h3>
+                </div>
+              </div>
+            </div>
 
-      <!-- Quiz Start Button -->
-      <div>
-        <button id="startbtn">START</button>
-      </div>
+            <!-- Sub-row for Quiz Instructions -->
+            <div class="row">        
+              <div class="col-md-12">       
+                <p class="card-text">
+                  <p>...where you will test your knowledge of some of my favourite geek culture. You will have 3 minutes (or 180 seconds) to answer as many questions as you can.
+                    Every correct answer will award you 5 points, and every incorrect answer will deduct 2 points from your score. Think that's too easy? Well that's not all...
+                    Be aware that every wrong answer will also decrease the amount of time you have left! 😱</p>
+                  <p>If you think you're ready to take on this pop culture challenge, click on the button below:</p>
+                </p>
+              </div>
+            </div>
 
-      <!-- Quiz High Score Page -->
-      <div>
-        <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
+            <!-- Sub-row for Button -->
+            <div class="row">
+              <div class="col-md-12">
+                <!-- Quiz Start Button -->
+                <div>
+                  <button id="startbtn">START</button>
+                </div>
+              </div>
+            </div>
+            <!-- Sub-row for Leaderboard -->
+            <div class="row">
+              <div class="col-md-12">
+                <!-- Quiz High Score Page -->
+                <div>
+                  <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
