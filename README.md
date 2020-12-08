@@ -1,91 +1,61 @@
-# 04 Web APIs: Code Quiz
+# 04 Web APIs: Quiz
 
 ## Your Task
 
-As you proceed in your journey to becoming a full-stack web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
+**[MissNG Code](https://missng-git.github.io/Quiz/)**
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework will teach you all the skills you need to succeed in this assignment.
+Welcome to the MissNG Quiz!
 
+This quiz application was built from scratch and contains a series of multiple-choice questions intended to challenge your pop culture knowledge. This app is capable of running in a browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It has been stylished with a clean, polished, and responsive user interface. 
 
-## User Story
+You will have 3 minutes (or 180 seconds) to answer as many questions as you can. Every correct answer will award you 5 points, and every incorrect answer will deduct 2 points from your score as well as decrease the amount of time you have left! 😱
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
-
-
-## Acceptance Criteria
+## Objectives
 
 ```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
++ Present an interactive quiz to test users on random pop culture knowledge
++ Start the quiz with the use of a button and initiate a timer
++ Advise users when an answer has been answered correctly or not
++ Accumulate points for correct answers
++ Deduct points & time for incorrect answers
++ End the quiz when timer reaches 0 or all questions answered
++ Allow users to enter initials to track high scores
+
 ```
 
-
-## Mock-Up
+## Target Design
 
 The following animation demonstrates the application functionality:
 
 ![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
 
-## Grading Requirements
+### Overview of Code Functionality
 
-This homework is graded based on the following criteria: 
+1. Application's buttons & links function correctly.
 
-### Technical Acceptance Criteria: 40%
+2. Application's questions & in/correct messages display properly.
 
-* Satisfies all of the above acceptance criteria.
+3. Application's scoring function increases & decreases appropriately.
 
-### Deployment: 32%
+4. Application's timer function starts 'on click' of button & deducts time with each incorrect answser
 
-* Application deployed at live URL.
+5. Application 'prompts' to track high score when quiz ends.
 
-* Application loads with no errors.
+## Usability
 
-* Application GitHub URL submitted.
+**Quiz Instructions** 
+You will have 3 minutes (or 180 seconds) to answer as many questions as you can. Every correct answer will award you 5 points. Every incorrect answer will deduct 2 points and decrease the amount of time you have left! 😱
+You will automatically be prompted with the next question and the quiz will end once all questions are answered or the timer reaches 0 (_Game Over!_)
 
-* GitHub repository that contains application code.
+=======
 
-### Application Quality: 15%
+* Click on "START" button to start the timer and begin the quiz.
 
-* Application user experience is intuitive and easy to navigate.
+* Click on the relative radio button to select your answer.
 
-* Application user interface style is clean and polished.
+* If correct, 5 points will be added to your score and a "Correct!" message will display on the screen.
 
-* Application resembles the mock-up functionality provided in the homework instructions.
+* If incorrect, 2 points will be deducted from your score and an "Incorrect!" message will display on the screen along with time being deducted from your timer.
 
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* When the quiz is over, enter your initials to save your high score to the Leaderboard
