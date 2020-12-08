@@ -34,32 +34,51 @@
 
   <body>
     <!-- SCORES -->
-    <!-- Container to house timer, score, & questions -->
-    <div id="container">
-      <div id="score"></div>
-      <div id="questions">
-        <!-- Leaderboard Heading -->
-        <h1>Leaderboard</h1><hr/>
-      </div>
+    <!-- Card to house leaderboard scores & buttons -->
+    <div class="w-25 p-3 container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="about-card">
+            <header class="card-header">
+              <!-- Leaderboard Heading -->
+              <h1>~Leaderboard~</h1>
+            </header>
 
-      <!-- Quiz Start Button -->
-      <div id="btn-container">
-        <button id="restart">Restart Quiz</button>
-        <button id="clear" value="reset">Clear Highscores</button>
+            <!-- !!RETRIEVE LOCAL STORAGE SCORES!! -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <div class="score"></div>                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sub-row for Quiz Instructions -->
+            <div class="row">        
+              <div class="col-md-12">       
+                <!-- Quiz Retart Button -->
+                <div class="btn-container">
+                    <button class="btn btn-dark" id="restart">Restart Quiz</button>
+                    <button class="btn btn-secondary" id="clear" value="reset">Clear Highscores</button>
+                </div>
+              </div>
+            </div>
+            <hr/>
+            <!-- FOOTER -->
+            <footer class="footer">
+              <div class="foot-box">
+                <div class="text-muted">
+                  Copyright © 2020 <strong>MissNG</strong><br>
+                  All Rights Reserved</p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="foot-box">
-        <div class="text-muted">
-          Copyright © 2020 <strong>MissNG</strong><br>
-          All Rights Reserved</p>
-          </div>
-      </div>
-    </footer>
-
     <!-- Link to Script -->
-    <script src="Assets/JS/leaderboard.js"></script>
+    <script src="Assets/JS/javascript.js"></script>
   </body>
 </html>
