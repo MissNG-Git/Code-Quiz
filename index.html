@@ -35,20 +35,20 @@
   <body>
     <!-- QUIZ -->
     <!-- Card to house timer, score, & questions -->
-    <div class="container">
+    <div class="w-25 p-3 container">
       <div class="row">
         <div class="col-md-12">
           <div class="about-card">
             <header class="card-header">
               <!-- Quiz Heading -->
-              <h2>~Quiz-mania~</h2>
+              <h3>~Quiz-mania~</h3>
             </header>
 
             <!-- Sub-row for Sub-Header w/GoogleFonts -->
             <div class="row">
               <div class="col-md-12">
                 <div class="card-body">
-                  <h3 class="card-title">Welcome to the <em id="handle">MissNG</em> Quiz!</h3>
+                  <h4 class="card-title">Welcome to the <em id="handle">MissNG</em> Quiz!</h4>
                 </div>
               </div>
             </div>
@@ -60,9 +60,10 @@
                   alt="I heart pop culture"/>
                 
                 <p class="card-text">
-                  <p>...where you will test your knowledge of some of my favourite geek culture. You will have 3 minutes (or 180 seconds) to answer as many questions as you can.
-                    Every correct answer will award you 5 points, and every incorrect answer will deduct 2 points from your score. Think that's too easy? Well that's not all...
-                    Be aware that every wrong answer will also decrease the amount of time you have left! 😱</p>
+                  <p>...where you will test your knowledge of some of my favourite geek culture.</p>
+                  <p>You will have 3 minutes <em>(or 180 seconds)</em> to answer as many questions as you can.
+                    Every correct answer will award you <u>5 points</u>, and every incorrect answer will deduct <u>2 points</u> from your score.</p>
+                  <p><strong>Be careful though!</strong> Every wrong answer will also decrease the amount of time you have left! 😱</p>
                   <p>If you think you're ready to take on this pop culture challenge, click on the button below:</p>
                 </p>
               </div>
@@ -73,10 +74,11 @@
               <div class="col-md-12">
                 <!-- Quiz Start Button -->
                 <div>
-                  <button id="startbtn">START</button>
+                  <button class="btn btn-info" id="startbtn">START</button>
                 </div>
               </div>
             </div>
+            <br>
             <!-- Sub-row for Leaderboard -->
             <div class="row">
               <div class="col-md-12">
@@ -86,20 +88,20 @@
                 </div>
               </div>
             </div>
+            <hr/>
+            <!-- FOOTER -->
+            <footer class="footer">
+              <div class="foot-box">
+                <div class="text-muted">
+                  Copyright © 2020 <strong>MissNG</strong><br>
+                  All Rights Reserved</p>
+                </div>
+              </div>
+            </footer>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="foot-box">
-        <div class="text-muted">
-          Copyright © 2020 <strong>MissNG</strong><br>
-          All Rights Reserved</p>
-          </div>
-      </div>
-    </footer>
 
     <!-- Link to Script -->
     <script src="Assets/JS/javascript.js"></script>
