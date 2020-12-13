@@ -74,88 +74,96 @@ var questions = [
             "Dumbo",
             "The Jungle Book"
         ],
-        // Answer: A1
+        // Answer: A
         answer: "Aladdin",
     },
     {
-        title: "8) GHIBLI?",
+        title: "8) Chihiro, Kohaku, Lin, and Kamaji all work at Yubaba's bathhouse in what Studio Ghibli film?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Ponyo",
+            "Spirited Away",
+            "Tales from Earthsea",
+            "Kiki's Delivery Service"
         ],
-        answer: "",
+        // Answer: B
+        answer: "Spirited Away",
     },
     {
-        title: "9) GAME?",
+        title: "9) In which Bungie FPS game series is there a Hunter, Warlock & Titan class to choose from?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Destiny",
+            "Halo",
+            "Myth",
+            "Oni"
         ],
-        answer: "",
+        // Answer: A
+        answer: "Destiny",
     },
     {
-        title: "10) DISNEY?",
+        title: "10) Which well-known Disney movie had the critically acclaimed song titled 'Colors of the Wind'?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Alice in Wonderland",
+            "Pocahontas",
+            "Toy Story",
+            "A Bug's Life"
         ],
-        answer: "",
+        // Answer: B
+        answer: "Pocahontas",
     },
     {
-        title: "11) GHIBLI?",
+        title: "11) What Studio Ghibli film is a story about a young village prince involved in the strugge between the forest gods and the humans who consume its resources?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "The Wind Rises",
+            "Howl's Moving Castle",
+            "Princess Mononoke",
+            "The Cat Returns"
         ],
-        answer: "",
+        // Answer: C
+        answer: "Princess Mononoke",
     },
     {
-        title: "12) GAME?",
+        title: "12) Which racing video game franchise, published by Electronic Arts (EA), has released 24 primary installments and even have a film adaptation of the same name?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Mario Kart",
+            "Forza",
+            "Gran Turismo",
+            "Need for Speed"
         ],
-        answer: "",
+        // Answer: D
+        answer: "Need for Speed",
     },
     {
-        title: "13) DISNEY?",
+        title: "13) Which Disney movie follows a daughter impersonating a man in order to take her father's place to fight a war?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Herculas",
+            "Mulan",
+            "Aristocats",
+            "Up"
         ],
-        answer: "",
+        // Answer: B
+        answer: "Mulan",
     },
     {
-        title: "14) GHIBLI?",
+        title: "14) Which Studio Ghibli film features two young daughters and their interactions with friendly wood spirits?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Panda! Go Panda!",
+            "Pom Poko",
+            "The Red Turtle",
+            "My Neighbor Totoro"
         ],
-        answer: "",
+        // Answer: D
+        answer: "My Neighbor Totoro",
     },
     {
-        title: "15) GAME?",
+        title: "15) Which music video game features characters like Alice, Baby-Lon, Yuni, Rage, Disco (Afro) & Konsento?",
         choices: [
-            "",
-            "",
-            "",
-            ""
+            "Dance Dance Revolution",
+            "PaRappa the Rapper",
+            "Dance Central",
+            "Just Dance"
         ],
-        answer: "",
+        // Answer: A
+        answer: "Dance Dance Revolution",
     },
 ]
 
