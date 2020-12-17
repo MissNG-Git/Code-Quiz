@@ -3,167 +3,152 @@ var questions = [
     {
         title: "1) Which 1980 Disney film is about an aquatic creature who dreams of becoming human after falling in love with a prince?",
         choices: [
-            "Fantasia",
-            "The Little Mermaid",
-            "Peter Pan",
-            "Cinderella"
+            "A) Fantasia",
+            "B) The Little Mermaid",
+            "C) Peter Pan",
+            "D) Cinderella"
         ],
-        //Answer: B
-        answer: "The Little Mermaid",
+        answer: "B) The Little Mermaid",
     },
     {
         title: "2) Which 1984 Hayao Miyazaki film about a polluted world is attributed to cementing Miyazaki's reputation as an animator?",
         choices: [
-            "Ocean Waves",
-            "Castle in the Sky",
-            "Porco Rosso",
-            "Nausicaä of the Valley of the Wind"
+            "A) Ocean Waves",
+            "B) Castle in the Sky",
+            "C) Porco Rosso",
+            "D) Nausicaä of the Valley of the Wind"
         ],
-        // Answer: D
-        answer: "Nausicaä of the Valley of the Wind",
+        answer: "D) Nausicaä of the Valley of the Wind",
     },
     {
         title: "3) Which Ubisoft video game series follows an organization with a doctrine that says 'Nothing is Real; Everything is Permitted' and 'We work in the dark to serve the light'?",
         choices: [
-            "Assassin's Creed",
-            "Call of Duty",
-            "Borderlands",
-            "Fallout",
+            "A) Assassin's Creed",
+            "B) Call of Duty",
+            "C) Borderlands",
+            "D) Fallout",
         ],
-        // Answer: A
-        answer: "Assassin's Creed",
+        answer: "A) Assassin's Creed",
     },
     {
         title: "4) Released in 1991, which Disney fairy tale set in France follows a bookworm who falls in love with a cursed prince?",
         choices: [
-            "The Hunchback of Notre Dame",
-            "Tarzan",
-            "Beauty and the Beast",
-            "Shrek"
+            "A) The Hunchback of Notre Dame",
+            "B) Tarzan",
+            "C) Beauty and the Beast",
+            "D) Shrek"
         ],
-        // Answer: C
-        answer: "Beauty and the Beast",
+        answer: "C) Beauty and the Beast",
     },
     {
         title: "5) Which 1988 Studio Ghibli film follows a pair of young siblings struggling to survive during the final months of World War II?",
         choices: [
-            "When Marnie was There",
-            "Arrietty",
-            "Only Yesterday",
-            "Grave of the Fireflies"
+            "A) When Marnie was There",
+            "B) Arrietty",
+            "C) Only Yesterday",
+            "D) Grave of the Fireflies"
         ],
-        // Answer: D
-        answer: "Grave of the Fireflies",
+        answer: "D) Grave of the Fireflies",
     },
     {
         title: "6) Set in the fantasy world of Spira, which Square Enix video game follows a group of adventurers on their quest to defeat a rampaging monster known as Sin?",
         choices: [
-            "Final Fantasy",
-            "Final Fantasy V",
-            "Final Fantasy X",
-            "Final Fantasy XV"
+            "A) Final Fantasy",
+            "B) Final Fantasy V",
+            "C) Final Fantasy X",
+            "D) Final Fantasy XV"
         ],
-        // Answser: C
-        answer: "Final Fantasy X",
+        answer: "C) Final Fantasy X",
     },
     {
         title: "7) Which 1992 Disney film folows a street rat and his pet monkey as they try to thwart the evil plans of a Royal Vizier by enlisting the help of a genie and magic carpet?",
         choices: [
-            "Aladdin",
-            "Bambi",
-            "Dumbo",
-            "The Jungle Book"
+            "A) Aladdin",
+            "B) Bambi",
+            "C) Dumbo",
+            "D) The Jungle Book"
         ],
-        // Answer: A
-        answer: "Aladdin",
+        answer: "A) Aladdin",
     },
     {
         title: "8) Chihiro, Kohaku, Lin, and Kamaji all work at Yubaba's bathhouse in what Studio Ghibli film?",
         choices: [
-            "Ponyo",
-            "Spirited Away",
-            "Tales from Earthsea",
-            "Kiki's Delivery Service"
+            "A) Ponyo",
+            "B) Spirited Away",
+            "C) Tales from Earthsea",
+            "D) Kiki's Delivery Service"
         ],
-        // Answer: B
-        answer: "Spirited Away",
+        answer: "B) Spirited Away",
     },
     {
         title: "9) In which Bungie FPS game series is there a Hunter, Warlock & Titan class to choose from?",
         choices: [
-            "Destiny",
-            "Halo",
-            "Myth",
-            "Oni"
+            "A) Destiny",
+            "B) Halo",
+            "C) Myth",
+            "D) Oni"
         ],
-        // Answer: A
-        answer: "Destiny",
+        answer: "A) Destiny",
     },
     {
         title: "10) Which well-known Disney movie had the critically acclaimed song titled 'Colors of the Wind'?",
         choices: [
-            "Alice in Wonderland",
-            "Pocahontas",
-            "Toy Story",
-            "A Bug's Life"
+            "A) Alice in Wonderland",
+            "B) Pocahontas",
+            "C) Toy Story",
+            "D) A Bug's Life"
         ],
-        // Answer: B
-        answer: "Pocahontas",
+        answer: "B) Pocahontas",
     },
     {
         title: "11) What Studio Ghibli film is a story about a young village prince involved in the strugge between the forest gods and the humans who consume its resources?",
         choices: [
-            "The Wind Rises",
-            "Howl's Moving Castle",
-            "Princess Mononoke",
-            "The Cat Returns"
+            "A) The Wind Rises",
+            "B) Howl's Moving Castle",
+            "C) Princess Mononoke",
+            "D) The Cat Returns"
         ],
-        // Answer: C
-        answer: "Princess Mononoke",
+        answer: "C) Princess Mononoke",
     },
     {
         title: "12) Which racing video game franchise, published by Electronic Arts (EA), has released 24 primary installments and even have a film adaptation of the same name?",
         choices: [
-            "Mario Kart",
-            "Forza",
-            "Gran Turismo",
-            "Need for Speed"
+            "A) Mario Kart",
+            "B) Forza",
+            "C) Gran Turismo",
+            "D) Need for Speed"
         ],
-        // Answer: D
-        answer: "Need for Speed",
+        answer: "D) Need for Speed",
     },
     {
         title: "13) Which Disney movie follows a daughter impersonating a man in order to take her father's place to fight a war?",
         choices: [
-            "Herculas",
-            "Mulan",
-            "Aristocats",
-            "Up"
+            "A) Herculas",
+            "B) Mulan",
+            "C) Aristocats",
+            "D) Up"
         ],
-        // Answer: B
-        answer: "Mulan",
+        answer: "B) Mulan",
     },
     {
         title: "14) Which Studio Ghibli film features two young daughters and their interactions with friendly wood spirits?",
         choices: [
-            "Panda! Go Panda!",
-            "Pom Poko",
-            "The Red Turtle",
-            "My Neighbor Totoro"
+            "A) Panda! Go Panda!",
+            "B) Pom Poko",
+            "C) The Red Turtle",
+            "D) My Neighbor Totoro"
         ],
-        // Answer: D
-        answer: "My Neighbor Totoro",
+        answer: "D) My Neighbor Totoro",
     },
     {
         title: "15) Which music video game features characters like Alice, Baby-Lon, Yuni, Rage, Disco (Afro) & Konsento?",
         choices: [
-            "Dance Dance Revolution",
-            "PaRappa the Rapper",
-            "Dance Central",
-            "Just Dance"
+            "A) Dance Dance Revolution",
+            "B) PaRappa the Rapper",
+            "C) Dance Central",
+            "D) Just Dance"
         ],
-        // Answer: A
-        answer: "Dance Dance Revolution",
+        answer: "A) Dance Dance Revolution",
     },
 ]
 
