@@ -46,7 +46,7 @@
             <div id="quizScore"></div>
 
             <header class="card-header">
-              <!-- Quiz Heading -->
+              <!-- Quiz Header -->
               <h3>~Quiz-mania~</h3>
             </header>
 
@@ -54,7 +54,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="card-body">
-                  <h4 class="quizTitle">Welcome to the <em id="handle">MissNG</em> Quiz!</h4>
+                  <h4 class="quizHeading">Welcome to the <em id="handle">MissNG</em> Quiz!</h4>
                 </div>
               </div>
             </div>
@@ -73,30 +73,44 @@
                     <p><strong>Be careful though!</strong> Every wrong answer will also decrease the amount of time you have left! 😱</p>
                     <p>If you think you're ready to take on this pop culture challenge, click on the button below:</p>
                   </p>
+
+                  <!-- Sub-row for Button -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- Quiz Start Button -->
+                      <div>
+                        <button class="btn btn-info" id="startbtn">START</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <br>
+
+                  <!-- Sub-row for Leaderboard -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- Quiz High Score Page -->
+                      <div>
+                        <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
+                      </div>
+                    </div>
+                  </div>
+
                   <!-- Quiz Questions -->
-                  <div id="quizQuestions"></div>
-                </div>
-              </div>
-            </div>
+                  <div id="quizQuestions" class="hide">
+                    <h2 id="quizTitle"></h2>
+                    <div id="quizChoices"></div>
+                  </div>
 
-            <!-- Sub-row for Button -->
-            <div class="row">
-              <div class="col-md-12">
-                <!-- Quiz Start Button -->
-                <div>
-                  <button class="btn btn-info" id="startbtn">START</button>
-                </div>
-              </div>
-            </div>
-
-            <br>
-
-            <!-- Sub-row for Leaderboard -->
-            <div class="row">
-              <div class="col-md-12">
-                <!-- Quiz High Score Page -->
-                <div>
-                  <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
+                  <!-- Quiz Finish -->
+                  <div id="fin-screen" class="hide">
+                    <h2>Congratulations!</h2>
+                    <p>Your final score is <span id="final-score"></span>.</p>
+                    <p>Enter initials: 
+                      <input type="text" id="initials" max="3"/>
+                      <button id="submit">Submit</button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
