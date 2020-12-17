@@ -152,7 +152,17 @@ var questions = [
     },
 ]
 
-// Declare variables for score & timer
+// Declare variables
+var startBtn = document.querySelector("#startbtn");
+var quizTimer = document.querySelector("#timeLeft");
+var quizQuestions = document.querySelector("#quizQuestions");
+var quizChoices = document.querySelector("#quizChoices");
+var quizScore = document.querySelector("#quizScore");
+var userInitials = document.querySelector("#initials");
+var submitBtn = document.querySelector("#submit");
+var questionIndex = 0;
+var startTime = 180;
+var timerId;
 
 // "click" eventListener to trigger timer & quiz
 
