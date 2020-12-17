@@ -36,46 +36,31 @@
     <!-- SCORES -->
     <!-- Card to house leaderboard scores & buttons -->
     <div class="w-25 p-3 container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="about-card">
-            <header class="card-header">
-              <!-- Leaderboard Heading -->
-              <h1>~Leaderboard~</h1>
-            </header>
+      <header class="leaderHeader">
+        <!-- Leaderboard Heading -->
+        <h1>~Leaderboard~</h1>
+      </header>
 
-            <!-- !!RETRIEVE LOCAL STORAGE SCORES!! -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card-body">
-                        <div class="score"></div>                    
-                    </div>
-                </div>
-            </div>
+      <div class="wrapper"></div>
+        <!-- !!RETRIEVE LOCAL STORAGE SCORES!! -->
+        <div class="savedScores"></div>                    
+      
+        <!-- Quiz Retart Button -->
+        <button class="btn btn-dark" id="restart">Restart Quiz</button>
+        <button class="btn btn-secondary" id="clear" value="reset">Clear Highscores</button>
 
-            <!-- Sub-row for Quiz Instructions -->
-            <div class="row">        
-              <div class="col-md-12">       
-                <!-- Quiz Retart Button -->
-                <div class="btn-container">
-                    <button class="btn btn-dark" id="restart">Restart Quiz</button>
-                    <button class="btn btn-secondary" id="clear" value="reset">Clear Highscores</button>
-                </div>
-              </div>
+      
+        <hr/>
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="foot-box">
+            <div class="text-muted">
+              <p>Copyright © 2020 <strong>MissNG</strong><br>
+              All Rights Reserved</p>
             </div>
-            <hr/>
-            <!-- FOOTER -->
-            <footer class="footer">
-              <div class="foot-box">
-                <div class="text-muted">
-                  Copyright © 2020 <strong>MissNG</strong><br>
-                  All Rights Reserved</p>
-                </div>
-              </div>
-            </footer>
           </div>
-        </div>
-      </div>
+        </footer>
+      </div>      
     </div>
 
     <!-- Link to Script -->

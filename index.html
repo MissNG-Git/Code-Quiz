@@ -34,100 +34,69 @@
 
   <body>
     <!-- QUIZ -->
-    <!-- Card to house timer, score, & questions -->
     <div class="w-25 p-3 container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="about-card">
-            <!-- Quiz Timer -->
-            <div id="timeLeft"></div>
+      <header class="quizHeader">
+        <h3>~Quiz-mania~</h3>
+      </header>
 
-            <!-- Quiz Score -->
-            <div id="quizScore"></div>
+      <!-- Quiz Timer, float right -->
+      <div id="timeLeft"></div>
+      <!-- Quiz Score, float left -->
+      <div id="quizScore"></div>
 
-            <header class="card-header">
-              <!-- Quiz Header -->
-              <h3>~Quiz-mania~</h3>
-            </header>
+      <div class="wrapper"></div>
+        <div id="quizDiv">
+            <!-- Sub-Header w/GoogleFonts -->
+            <h4 class="quizHeading">Welcome to the <em id="handle">MissNG</em> Quiz!</h4>
+            <!-- Quiz Instructions -->       
+            <img class="responsive-img" src="https://images-na.ssl-images-amazon.com/images/I/61pSbvtrRhL._AC_UL600_SR600,600_.png"
+            alt="I heart pop culture"/>
+            
+            <p class="quizInstructions">
+              <p>...where you will test your knowledge of some of my favourite geek culture.</p>
+              <p>You will have 3 minutes <em>(or 180 seconds)</em> to answer as many questions as you can.
+                Every correct answer will award you <u>5 points</u>, and every incorrect answer will deduct <u>2 points</u> from your score.</p>
+              <p><strong>Be careful though!</strong> Every wrong answer will also decrease the amount of time you have left! 😱</p>
+              <p>If you think you're ready to take on this pop culture challenge, click on the button below:</p>
+            </p>
+            
+            <!-- Quiz Start Button -->
+            <button class="btn btn-info" id="startbtn">START</button>
+            
+            <br>
 
-            <!-- Sub-row for Sub-Header w/GoogleFonts -->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card-body">
-                  <h4 class="quizHeading">Welcome to the <em id="handle">MissNG</em> Quiz!</h4>
-                </div>
-              </div>
+            <!-- Quiz High Score Page -->
+            <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
+
+            <!-- Quiz Questions -->
+            <div id="quizQuestions" class="hide">
+              <h2 id="quizTitle"></h2>
+              <div id="quizChoices"></div>
             </div>
 
-            <!-- Sub-row for Quiz Instructions -->
-            <div class="row">        
-              <div class="col-md-12">
-                <div id="quizDiv">
-                  <img class="responsive-img" src="https://images-na.ssl-images-amazon.com/images/I/61pSbvtrRhL._AC_UL600_SR600,600_.png"
-                  alt="I heart pop culture"/>
-                  
-                  <p class="card-text">
-                    <p>...where you will test your knowledge of some of my favourite geek culture.</p>
-                    <p>You will have 3 minutes <em>(or 180 seconds)</em> to answer as many questions as you can.
-                      Every correct answer will award you <u>5 points</u>, and every incorrect answer will deduct <u>2 points</u> from your score.</p>
-                    <p><strong>Be careful though!</strong> Every wrong answer will also decrease the amount of time you have left! 😱</p>
-                    <p>If you think you're ready to take on this pop culture challenge, click on the button below:</p>
-                  </p>
-
-                  <!-- Sub-row for Button -->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <!-- Quiz Start Button -->
-                      <div>
-                        <button class="btn btn-info" id="startbtn">START</button>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <br>
-
-                  <!-- Sub-row for Leaderboard -->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <!-- Quiz High Score Page -->
-                      <div>
-                        <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Quiz Questions -->
-                  <div id="quizQuestions" class="hide">
-                    <h2 id="quizTitle"></h2>
-                    <div id="quizChoices"></div>
-                  </div>
-
-                  <!-- Quiz Finish -->
-                  <div id="fin-screen" class="hide">
-                    <h2>Congratulations!</h2>
-                    <p>Your final score is <span id="final-score"></span>.</p>
-                    <p>Enter initials: 
-                      <input type="text" id="initials" max="3"/>
-                      <button id="submit">Submit</button>
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <!-- Quiz Finish -->
+            <div id="quizFin" class="hide">
+              <h2>Congratulations!</h2>
+              <p>Your final score is <span id="final-score"></span>.</p>
+              <p>Enter initials: 
+                <input type="text" id="initials" max="3"/>
+                <button id="submit">Submit</button>
+              </p>
             </div>
-
-            <hr/>
-
-            <!-- FOOTER -->
-            <footer class="footer">
-              <div class="foot-box">
-                <div class="text-muted">
-                  Copyright © 2020 <strong>MissNG</strong><br>
-                  All Rights Reserved</p>
-                </div>
-              </div>
-            </footer>
           </div>
         </div>
+
+        <hr/>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="foot-box">
+            <div class="text-muted">
+              <p>Copyright © 2020 <strong>MissNG</strong><br>
+              All Rights Reserved</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 
