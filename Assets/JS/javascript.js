@@ -156,22 +156,72 @@ var questions = [
 var startBtn = document.querySelector("#startbtn");
 var quizTimer = document.querySelector("#timeLeft");
 var quizQuestions = document.querySelector("#quizQuestions");
+var quizTitle = document.querySelector("#quizTitle");
 var quizChoices = document.querySelector("#quizChoices");
 var quizScore = document.querySelector("#quizScore");
 var userInitials = document.querySelector("#initials");
 var submitBtn = document.querySelector("#submit");
 var questionIndex = 0;
+var startScore = 0;
 var startTime = 180;
 var timerId;
 
 // "click" eventListener to trigger timer & quiz
+startBtn.addEventListener("click", startQuiz);
 
-// Render questions to page
+function startQuiz() {
+    // Hide quiz start page
+    var quizStartEl = document.getElementById("quizStart");
+    console.log(quizStartEl);
+    quizStartEl.setAttribute("class", "hide");
+    // Unhide questions
+    quizQuestions.removeAttribute("class");
+    // Display score
+    quizScore.textContent = "Score: " + startScore;
+    // Display timer
+    quizTimer.textContent = "Timer: " + startTime;
+    // Start time
+    timerId = setInterval(function() {
+        startTime--;
+        quizTimer.textContent = "Timer: " + startTime;
+        if (startTime <= 0) {
+        clearInterval(timerId);    
+        quizEnd();
+        quizTimer.textContent = "TIME'S UP!";
+        }
+    }, 1000);
+    // Render questions to page via fxn
+    displayQuestions();
+}             
 
-// forLoop to generate questions
+// Function to generate questions
+function displayQuestions() {
+    // Clear existing DATA
+    quizTitle.innerHTML = "";
+    quizChoices.innerHTML = "";
+
+    // Retrieve objects from question array
+    var currentQuestion = questions[questionIndex];
+    console.log(currentQuestion);
+    // Display question titles
+    quizTitle.textContent = currentQuestion.title;
+
+    // Retrieve object property 'choices' using forEach()
+    currentQuestion.choices.forEach(function(choice, i) {
+        // Turn choices into buttons
+        var choiceBtn = document.createElement("button");
+        choiceBtn.setAttribute("class", "choice");
+        choiceBtn.setAttribute("value", choice);
+        choiceBtn.textContent = choice;
+        // Display question choices
+        quizChoices.appendChild(choiceBtn);
+        // // "click" eventListener for choice buttons; check in/correct answers function
+        choiceBtn.onclick = checkAnswer;
+    });
+}
 
 // Action next questions
-
+function checkAnswer() {
 // If, Else function to compare user selection with answer
 
     // If correct, add score & display msg

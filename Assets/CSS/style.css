@@ -40,12 +40,8 @@ body {
     right: 10px;
 }
 
-.timeLeft {
+#quizScore {
     float: right;
-}
-
-.quizScore {
-    float: left;
 }
 
 /*Google Fonts styling*/
@@ -71,7 +67,8 @@ p {
     text-align: center;
 }
 
-.button {
+.button,
+.choice {
     margin: 5px;
     font-size: 100%;
     border-radius: 15px;
@@ -100,8 +97,14 @@ button:hover {
     border-radius: 15px;
 }
 
-#quizChoices {
-    display: block;
+.choice {
+    background-color: teal;
+    color: white;
+    display: grid
+}
+
+.titleFont {
+    font-size: 18px;
 }
 
 .hide {

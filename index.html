@@ -40,13 +40,16 @@
       </header>
 
       <!-- Quiz Timer, float right -->
-      <div id="timeLeft"></div>
-      <!-- Quiz Score, float left -->
-      <div id="quizScore"></div>
+      <div>
+        <span id="timeLeft"></span>
+        <!-- Quiz Score, float left -->
+        <span id="quizScore"></span>
+      </div>
+      <br>
 
       <div class="wrapper"></div>
         <div id="quizDiv">
-          <div id="quizStart">
+          <div id="quizStart" class="start">
             <!-- Sub-Header w/GoogleFonts -->
             <h4 class="quizHeading">Welcome to the <em id="handle">MissNG</em> Quiz!</h4>
             <!-- Quiz Instructions -->       
@@ -72,7 +75,7 @@
 
           <!-- Quiz Questions -->
           <div id="quizQuestions" class="hide">
-            <h2 id="quizTitle"></h2>
+            <h3 id="quizTitle" class="titleFont"></h3>
             <div id="quizChoices"></div>
           </div>
 
