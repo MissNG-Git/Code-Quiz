@@ -6,7 +6,7 @@
     <!-- META for Character Encoding -->
     <meta charset="UTF-8" />
     <!-- META for Device Scaling -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <!-- META for Browser Compatibility -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
@@ -36,7 +36,7 @@
     <!-- QUIZ -->
     <div class="w-25 p-3 container">
       <header class="quizHeader">
-        <h3>~Quiz-mania~</h3>
+        <h2>~Quiz-mania~</h2>
       </header>
 
       <!-- Quiz Timer, float right -->
@@ -61,13 +61,13 @@
               <p>If you think you're ready to take on this pop culture challenge, click on the button below:</p>
             </p>
             
-            <!-- Quiz Start Button -->
-            <button class="btn btn-info" id="startbtn">START</button>
-            
-            <br>
-
-            <!-- Quiz High Score Page -->
-            <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
+            <div id="clickables">
+              <!-- Quiz Start Button -->
+              <button class="button" id="startbtn">START</button>
+              <br>
+              <!-- Quiz High Score Page -->
+              <a href="" alt="Highscore Leaderboard" id="leader">Leaderboard</a>
+            </div>
           </div>
 
           <!-- Quiz Questions -->
@@ -82,7 +82,7 @@
             <p>Your final score is <span id="final-score"></span>.</p>
             <p>Enter initials: 
               <input type="text" id="initials" max="3"/>
-              <button id="submit">Submit</button>
+              <button class="button" id="submit">Submit</button>
             </p>
           </div>
         </div>
