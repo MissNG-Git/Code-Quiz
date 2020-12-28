@@ -264,18 +264,21 @@ function checkAnswer() {
 }
 
 // Function to end quiz
-
+function quizEnd() {
     // Stop timer
-    
+    clearInterval(timerId);
   
     // Display quiz finish
-    
+    var quizFin = document.getElementById("quizFin");
+    quizFin.removeAttribute("class");
   
     // Display final score
-    
+    var finalScoreEl = document.getElementById("final-score");
+    finalScoreEl.textContent = startScore;
   
     // hide questions section
-    
+    quizQuestions.setAttribute("class", "hide");
+}
 
 // Display results & score
 // User input of initials for Leaderboard
