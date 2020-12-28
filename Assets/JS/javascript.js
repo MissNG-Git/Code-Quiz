@@ -150,7 +150,7 @@ var questions = [
         ],
         answer: "A) Dance Dance Revolution",
     },
-]
+];
 
 // Declare variables
 var startBtn = document.querySelector("#startbtn");
@@ -158,6 +158,7 @@ var quizTimer = document.querySelector("#timeLeft");
 var quizQuestions = document.querySelector("#quizQuestions");
 var quizTitle = document.querySelector("#quizTitle");
 var quizChoices = document.querySelector("#quizChoices");
+var quizComment = document.querySelector("#quizComment");
 var quizScore = document.querySelector("#quizScore");
 var userInitials = document.querySelector("#initials");
 var submitBtn = document.querySelector("#submit");
@@ -191,12 +192,12 @@ function startQuiz() {
         }
     }, 1000);
     // Render questions to page via fxn
-    displayQuestions();
+    displayQuestion();
 }             
 
 // Function to generate questions
-function displayQuestions() {
-    // Clear existing DATA
+function displayQuestion() {
+    // Clear existing data
     quizTitle.innerHTML = "";
     quizChoices.innerHTML = "";
 
@@ -207,26 +208,74 @@ function displayQuestions() {
     quizTitle.textContent = currentQuestion.title;
 
     // Retrieve object property 'choices' using forEach()
-    currentQuestion.choices.forEach(function(choice, i) {
+    currentQuestion.choices.forEach(function(choices) {
         // Turn choices into buttons
         var choiceBtn = document.createElement("button");
         choiceBtn.setAttribute("class", "choice");
-        choiceBtn.setAttribute("value", choice);
-        choiceBtn.textContent = choice;
-        // Display question choices
-        quizChoices.appendChild(choiceBtn);
-        // // "click" eventListener for choice buttons; check in/correct answers function
-        choiceBtn.onclick = checkAnswer;
+        choiceBtn.setAttribute("value", choices);
+        // Display question choices as buttons & add "click" eventListener for choice buttons; check in/correct answers function
+        choiceBtn.textContent = choices;
+        quizChoices.appendChild(choiceBtn).addEventListener("click", checkAnswer);
     });
 }
 
-// Action next questions
+// FIX 'QUIZ COMMENT' MESSAGE PROMPTS!!!
+// Function to check answer
 function checkAnswer() {
-// If, Else function to compare user selection with answer
-
+// If, Else function to compare user selection with answer,  display feedback
     // If correct, add score & display msg
+    if (this.value === questions[questionIndex].answer) {
+        startScore += 5;
+        document.getElementById("quizScore").innerHTML = "Score: " + startScore;
+        quizComment.textContent = "Whoo-hoo! You were right! 🙌";
+        quizComment.style = "color: green";
+        setTimeout(function() {
+            quizComment.setAttribute("class", "hide");
+          }, 3000);
+        questionIndex++;
+        console.log(questionIndex);
+        // Check timer vs continuing quiz
+        if (questionIndex >= questions.length) {
+            quizEnd();
+          } else {
+            displayQuestion();
+        }
+    }
+    // Else incorrect, deduct score, deduct time & display msg
+    else {
+        // Time penalty
+        startTime -= 10;
+        startScore -= 2;
+        document.getElementById("quizScore").innerHTML = "Score: " + startScore;
+        quizComment.textContent = "Sorry, that was wrong! 😞";
+        quizComment.style = "color: red";
+        setTimeout(function() {
+            quizComment.setAttribute("class", "hide");
+          }, 1800);
+        questionIndex++;
+        console.log(questionIndex);
+        // Check timer vs continuing quiz
+        if (questionIndex >= questions.length) {
+            quizEnd();
+          } else {
+            displayQuestion();
+        }
+    }
+}
 
-    // If incorrect, deduct score, deduct time & display msg
+// Function to end quiz
+
+    // Stop timer
+    
+  
+    // Display quiz finish
+    
+  
+    // Display final score
+    
+  
+    // hide questions section
+    
 
 // Display results & score
 // User input of initials for Leaderboard
