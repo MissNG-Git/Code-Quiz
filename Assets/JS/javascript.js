@@ -254,6 +254,10 @@ function checkAnswer() {
           }, 180000);
         questionIndex++;
         console.log(questionIndex);
+        // Score does not drop lower than 0
+        if (startScore < 0) {
+            startScore = 0
+        }
         // Check timer vs continuing quiz
         if (questionIndex >= questions.length) {
             quizEnd();
