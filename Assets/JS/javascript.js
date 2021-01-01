@@ -61,7 +61,7 @@ var questions = [
         answer: "C) Final Fantasy X",
     },
     {
-        title: "7) Which 1992 Disney film folows a street rat and his pet monkey as they try to thwart the evil plans of a Royal Vizier by enlisting the help of a genie and magic carpet?",
+        title: "7) Which 1992 Disney film follows a street rat and his pet monkey as they try to thwart the evil plans of a Royal Vizier by enlisting the help of a genie and magic carpet?",
         choices: [
             "A) Aladdin",
             "B) Bambi",
@@ -81,7 +81,7 @@ var questions = [
         answer: "B) Spirited Away",
     },
     {
-        title: "9) In which Bungie FPS game series is there a Hunter, Warlock & Titan class to choose from?",
+        title: "9) In which Bungie FPS (first-person shooter) game series is there a Hunter, Warlock & Titan class to choose from?",
         choices: [
             "A) Destiny",
             "B) Halo",
@@ -101,7 +101,7 @@ var questions = [
         answer: "B) Pocahontas",
     },
     {
-        title: "11) What Studio Ghibli film is a story about a young village prince involved in the strugge between the forest gods and the humans who consume its resources?",
+        title: "11) What Studio Ghibli film is a story about a young village prince involved in the struggle between the forest gods and the humans who consume its resources?",
         choices: [
             "A) The Wind Rises",
             "B) Howl's Moving Castle",
@@ -111,7 +111,7 @@ var questions = [
         answer: "C) Princess Mononoke",
     },
     {
-        title: "12) Which racing video game franchise, published by Electronic Arts (EA), has released 24 primary installments and even have a film adaptation of the same name?",
+        title: "12) Which racing video game franchise, published by Electronic Arts (EA), has released 24 primary installments as well as a film adaptation of the same name?",
         choices: [
             "A) Mario Kart",
             "B) Forza",
@@ -123,7 +123,7 @@ var questions = [
     {
         title: "13) Which Disney movie follows a daughter impersonating a man in order to take her father's place to fight a war?",
         choices: [
-            "A) Herculas",
+            "A) Hercules",
             "B) Mulan",
             "C) Aristocats",
             "D) Up"

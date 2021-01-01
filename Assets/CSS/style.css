@@ -25,6 +25,7 @@ button:hover {
 .quizHeader,
 .leaderHeader,
 #clickables,
+li,
 .footer {
     text-align: center;    
 }

@@ -38,7 +38,7 @@ The following animation demonstrates the application functionality:
 
 3. Application's scoring function increases & decreases appropriately.
 
-4. Application's timer function starts 'on click' of button & deducts time with each incorrect answser
+4. Application's timer function starts 'on click' of button & deducts time with each incorrect answer.
 
 5. Application 'prompts' to track high score when quiz ends.
 
@@ -58,4 +58,4 @@ You will automatically be prompted with the next question and the quiz will end 
 
 * If incorrect, 2 points will be deducted from your score and an "Incorrect!" message will display on the screen along with time being deducted from your timer.
 
-* When the quiz is over, enter your initials to save your high score to the Leaderboard
+* When the quiz is over, enter your initials to save your high score to the Leaderboard!
