@@ -5,6 +5,8 @@ loadScores();
 function loadScores() {
     // Get savedScores from localStorage; set to empty array if none
     var leaderBoard = JSON.parse(window.localStorage.getItem("savedScores")) || [];
+    // Sort leaderboard by high score
+    leaderBoard.sort((a, b) => a - b);
     // Loop through EACH object in leaderBoard array, create li within ol
     leaderBoard.forEach(function(score) {
         var liEl = document.createElement("li");
