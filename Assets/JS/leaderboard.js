@@ -1,7 +1,22 @@
-// Declare variables for score & timer
+// Run function on page load
+loadScores();
 
-// Create Leaderboard from local storage data; sort by high score
-
+// Create Leaderboard from local storage data
+function loadScores() {
+    // Get savedScores from localStorage; set to empty array if none
+    var leaderBoard = JSON.parse(window.localStorage.getItem("savedScores")) || [];
+    // Loop through EACH object in leaderBoard array, create li within ol
+    leaderBoard.forEach(function(score) {
+        var liEl = document.createElement("li");
+        liEl.textContent = score.initials + " ... " + score.score;
+        liEl.setAttribute("id", "scoreItem")
+        var olEl = document.getElementById("savedScores");
+        olEl.appendChild(liEl);
+        console.log(liEl);
+        console.log(olEl);
+    });
+    console.log(leaderBoard);
+}
 
 // "click" eventListener to clear Leaderboard
 var clearBtn = document.getElementById("clear")
