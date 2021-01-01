@@ -10,7 +10,9 @@ function loadScores() {
     // Loop through EACH object in leaderBoard array, create li within ol
     leaderBoard.forEach(function(score) {
         var liEl = document.createElement("li");
-        liEl.textContent = score.initials + " ... " + score.score;
+        liEl.textContent = score.initials 
+        + " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . " 
+        + score.score;
         liEl.setAttribute("id", "scoreItem")
         var olEl = document.getElementById("savedScores");
         olEl.appendChild(liEl);
