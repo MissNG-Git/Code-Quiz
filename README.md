@@ -27,7 +27,7 @@ You will have 3 minutes (or 180 seconds) to answer as many questions as you can.
 
 The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+![code quiz](./Assets/IMGs/04-web-apis-homework-demo.gif)
 
 
 ### Overview of Code Functionality
