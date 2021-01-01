@@ -246,6 +246,10 @@ function checkAnswer() {
         // Time penalty
         startTime -= 10;
         startScore -= 2;
+        // Score does not drop lower than 0
+        if (startScore < 0) {
+            startScore = 0
+        };
         document.getElementById("quizScore").innerHTML = "Score: " + startScore;
         quizComment.textContent = "Sorry, that was wrong! 😞";
         quizComment.style = "color: red";
@@ -254,10 +258,6 @@ function checkAnswer() {
           }, 180000);
         questionIndex++;
         console.log(questionIndex);
-        // Score does not drop lower than 0
-        if (startScore < 0) {
-            startScore = 0
-        }
         // Check timer vs continuing quiz
         if (questionIndex >= questions.length) {
             quizEnd();
