@@ -160,7 +160,6 @@ var quizTitle = document.querySelector("#quizTitle");
 var quizChoices = document.querySelector("#quizChoices");
 var quizComment = document.querySelector("#quizComment");
 var quizScore = document.querySelector("#quizScore");
-var userInitials = document.querySelector("#initials");
 var submitBtn = document.querySelector("#submit");
 var questionIndex = 0;
 var startScore = 0;
@@ -173,7 +172,7 @@ startBtn.addEventListener("click", startQuiz);
 function startQuiz() {
     // Hide quiz start page
     var quizStartEl = document.getElementById("quizStart");
-    console.log(quizStartEl);
+    // console.log(quizStartEl);
     quizStartEl.setAttribute("class", "hide");
     // Unhide questions
     quizQuestions.removeAttribute("class");
@@ -203,7 +202,7 @@ function displayQuestion() {
 
     // Retrieve objects from question array
     var currentQuestion = questions[questionIndex];
-    console.log(currentQuestion);
+    // console.log(currentQuestion);
     // Display question titles
     quizTitle.textContent = currentQuestion.title;
 
@@ -232,7 +231,7 @@ function checkAnswer() {
             quizComment.setAttribute("class", "hide");
           }, 180000);
         questionIndex++;
-        console.log(questionIndex);
+        // console.log(questionIndex);
         // Check timer vs continuing quiz
         if (questionIndex >= questions.length) {
             quizEnd();
@@ -248,8 +247,8 @@ function checkAnswer() {
         startScore -= 2;
         // Score does not drop lower than 0
         if (startScore < 0) {
-            startScore = 0
-        };
+            startScore = 0;
+        }
         document.getElementById("quizScore").innerHTML = "Score: " + startScore;
         quizComment.textContent = "Sorry, that was wrong! 😞";
         quizComment.style = "color: red";
@@ -257,7 +256,7 @@ function checkAnswer() {
             quizComment.setAttribute("class", "hide");
           }, 180000);
         questionIndex++;
-        console.log(questionIndex);
+        // console.log(questionIndex);
         // Check timer vs continuing quiz
         if (questionIndex >= questions.length) {
             quizEnd();
@@ -303,7 +302,7 @@ function saveScore () {
             initials: initialsInput,
             score: startScore,
         };
-        console.log(submitScore)
+        // console.log(submitScore);
         // Add Score to leaderBoard
         leaderBoard.push(submitScore);
         // Set Score to Local Storage
