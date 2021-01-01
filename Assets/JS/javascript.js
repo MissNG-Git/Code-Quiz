@@ -219,7 +219,6 @@ function displayQuestion() {
     });
 }
 
-// FIX 'QUIZ COMMENT' MESSAGE PROMPTS!!!
 // Function to check answer
 function checkAnswer() {
 // If, Else function to compare user selection with answer,  display feedback
@@ -231,13 +230,14 @@ function checkAnswer() {
         quizComment.style = "color: green";
         setTimeout(function() {
             quizComment.setAttribute("class", "hide");
-          }, 3000);
+          }, 180000);
         questionIndex++;
         console.log(questionIndex);
         // Check timer vs continuing quiz
         if (questionIndex >= questions.length) {
             quizEnd();
-          } else {
+        } 
+        else {
             displayQuestion();
         }
     }
@@ -251,7 +251,7 @@ function checkAnswer() {
         quizComment.style = "color: red";
         setTimeout(function() {
             quizComment.setAttribute("class", "hide");
-          }, 1800);
+          }, 180000);
         questionIndex++;
         console.log(questionIndex);
         // Check timer vs continuing quiz
@@ -280,13 +280,31 @@ function quizEnd() {
     quizQuestions.setAttribute("class", "hide");
 }
 
-// Display results & score
 // User input of initials for Leaderboard
-    // Set input parameters (min 3 characters, max 4)
-
 // Submit button w/"click" eventListener
-    
-    // Store results on Local Storage
+submitBtn.addEventListener("click", saveScore);
 
-// Display Leaderboard
-    // Add quizScore to leaderBoard
+function saveScore () {
+    var initialsInput = document.getElementById("initials").value;
+    // Check initials typed in text box
+    if (initialsInput.length <= 2) {
+        alert("Initials must contain 3 characters!");
+    } 
+    // Store results on Local Storage
+    else {
+        // Get savedScores from localStorage; set to empty array if empty
+        var leaderBoard = JSON.parse(window.localStorage.getItem("leaderBoard")) || [];
+        // Variable for new score object
+        var submitScore = {
+            initials: initialsInput,
+            score: startScore,
+        };
+        console.log(submitScore)
+        // Add Score to leaderBoard
+        leaderBoard.push(submitScore);
+        // Set Score to Local Storage
+        window.localStorage.setItem("savedScores", JSON.stringify(leaderBoard));
+        // Redirect to Leaderboard Scores page
+        window.location.href = "score.html";
+    }
+}

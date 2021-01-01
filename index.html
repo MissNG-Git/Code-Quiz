@@ -85,7 +85,9 @@
             <h2>Congratulations!</h2>
             <p>Your final score is <span id="final-score"></span>.</p>
             <p>Enter initials: 
-              <input type="text" id="initials" max="3"/>
+              <input type="text" id="initials" 
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode >= 97 && event.charCode <= 122 || event.charCode >= 65 && event.charCode <= 90"
+              minlength="3" maxlength="3" title="! Initials should be 3 characters long"/>
               <button class="button" id="submit">Submit</button>
             </p>
           </div>

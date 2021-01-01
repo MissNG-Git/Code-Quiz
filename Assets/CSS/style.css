@@ -111,6 +111,10 @@ button:hover {
     display: none;
 }
 
+input {
+    text-transform: uppercase;
+}
+
 /*Center-align to page*/
 .footer {
     color: #2e2e2e;
