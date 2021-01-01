@@ -292,8 +292,8 @@ function saveScore () {
     } 
     // Store results on Local Storage
     else {
-        // Get savedScores from localStorage; set to empty array if empty
-        var leaderBoard = JSON.parse(window.localStorage.getItem("leaderBoard")) || [];
+        // Get savedScores from localStorage; set to empty array if none
+        var leaderBoard = JSON.parse(window.localStorage.getItem("savedScores")) || [];
         // Variable for new score object
         var submitScore = {
             initials: initialsInput,
