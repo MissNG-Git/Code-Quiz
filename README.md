@@ -1,16 +1,13 @@
 # 04 Web APIs: Quiz
 
-## Your Task
-
-**[MissNG Code](https://missng-git.github.io/Quiz/)**
-
-Welcome to the MissNG Quiz!
+## Welcome to the...
+⋘ ──── ∗⋅◦∘◈\[MissNG Code](https://missng-git.github.io/Culture-Quiz/)◈∘◦⋅∗ ──── ⋙
 
 This quiz application was built from scratch and contains a series of multiple-choice questions intended to challenge your pop culture knowledge. This app is capable of running in a browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It has been stylished with a clean, polished, and responsive user interface. 
 
 You will have 3 minutes (or 180 seconds) to answer as many questions as you can. Every correct answer will award you 5 points, and every incorrect answer will deduct 2 points from your score as well as decrease the amount of time you have left! 😱
 
-## Objectives
+## ≫ ──── ≪•◦ Objectives ◦•≫ ──── ≪
 
 ```
 + Present an interactive quiz to test users on random pop culture knowledge
@@ -23,14 +20,14 @@ You will have 3 minutes (or 180 seconds) to answer as many questions as you can.
 
 ```
 
-## Target Design
+## ≫ ──── ≪•◦ Target Design ◦•≫ ──── ≪
 
 The following animation demonstrates the application functionality:
 
 ![code quiz](./Assets/IMGs/04-web-apis-homework-demo.gif)
 
 
-### Overview of Code Functionality
+### ≫ ──── ≪•◦ Overview of Code Functionality ◦•≫ ──── ≪
 
 1. Application's buttons & links function correctly.
 
@@ -42,7 +39,7 @@ The following animation demonstrates the application functionality:
 
 5. Application 'prompts' to track high score when quiz ends.
 
-## Usability
+## ≫ ──── ≪•◦ Usability ◦•≫ ──── ≪
 
 **Quiz Instructions** 
 You will have 3 minutes (or 180 seconds) to answer as many questions as you can. Every correct answer will award you 5 points. Every incorrect answer will deduct 2 points and decrease the amount of time you have left! 😱
