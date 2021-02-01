@@ -1,7 +1,7 @@
 # 04 Web APIs: Quiz
 
 ## Welcome to the...
-⋘ ──── ∗⋅◦∘◈\[MissNG Code](https://missng-git.github.io/Culture-Quiz/)◈∘◦⋅∗ ──── ⋙
+⋘ ──── ∗⋅◦∘◈\[[MissNG Code](https://missng-git.github.io/Culture-Quiz/)\]◈∘◦⋅∗ ──── ⋙
 
 This quiz application was built from scratch and contains a series of multiple-choice questions intended to challenge your pop culture knowledge. This app is capable of running in a browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It has been stylished with a clean, polished, and responsive user interface. 
 
