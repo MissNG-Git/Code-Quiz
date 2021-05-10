@@ -1,9 +1,10 @@
 # 04 Web APIs: Quiz
 
 ## Welcome to the...
+
 ⋘ ──── ∗⋅◦∘◈\[[MissNG Code](https://missng-git.github.io/Culture-Quiz/)\]◈∘◦⋅∗ ──── ⋙
 
-This quiz application was built from scratch and contains a series of multiple-choice questions intended to challenge your pop culture knowledge. This app is capable of running in a browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It has been stylished with a clean, polished, and responsive user interface. 
+This quiz application was built from scratch and contains a series of multiple-choice questions intended to challenge your pop culture knowledge. This app is capable of running in a browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It has been stylished with a clean, polished, and responsive user interface.
 
 You will have 3 minutes (or 180 seconds) to answer as many questions as you can. Every correct answer will award you 5 points, and every incorrect answer will deduct 2 points from your score as well as decrease the amount of time you have left! 😱
 
@@ -24,8 +25,9 @@ You will have 3 minutes (or 180 seconds) to answer as many questions as you can.
 
 The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/IMGs/04-web-apis-homework-demo.gif)
-
+![code quiz](./Assets/IMGs//screenshot-1.PNG)
+![code quiz](./Assets/IMGs//screenshot-2.PNG)
+![code quiz](./Assets/IMGs//screenshot-3.PNG)
 
 ### ≫ ──── ≪•◦ Overview of Code Functionality ◦•≫ ──── ≪
 
@@ -41,18 +43,18 @@ The following animation demonstrates the application functionality:
 
 ## ≫ ──── ≪•◦ Usability ◦•≫ ──── ≪
 
-**Quiz Instructions** 
+**Quiz Instructions**
 You will have 3 minutes (or 180 seconds) to answer as many questions as you can. Every correct answer will award you 5 points. Every incorrect answer will deduct 2 points and decrease the amount of time you have left! 😱
 You will automatically be prompted with the next question and the quiz will end once all questions are answered or the timer reaches 0 (_Game Over!_)
 
 =======
 
-* Click on "START" button to start the timer and begin the quiz.
+- Click on "START" button to start the timer and begin the quiz.
 
-* Click on the relative radio button to select your answer.
+- Click on the relative radio button to select your answer.
 
-* If correct, 5 points will be added to your score and a "Correct!" message will display on the screen.
+- If correct, 5 points will be added to your score and a "Correct!" message will display on the screen.
 
-* If incorrect, 2 points will be deducted from your score and an "Incorrect!" message will display on the screen along with time being deducted from your timer.
+- If incorrect, 2 points will be deducted from your score and an "Incorrect!" message will display on the screen along with time being deducted from your timer.
 
-* When the quiz is over, enter your initials to save your high score to the Leaderboard!
+- When the quiz is over, enter your initials to save your high score to the Leaderboard!
